@@ -1,7 +1,5 @@
-import { useState } from "react"
 import HamburgerMenu from "./HamburgerMenu"
 import Link from "next/link"
-import isOpen from "./HamburgerMenu"
 
 
 export default function NavBar() {
