@@ -1,15 +1,17 @@
 import Link from "next/link"
+import Image from "next/image"
 import React, { useState } from 'react'
+import horizontalLogo from 'src/images/integ-detailing-horizontal-logo.png'
+
 export default function NavBarMenu() {
 
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <nav className="flex items-center justify-between flex-wrap p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-          <img href="/" className="w-100 h-10 mr-2" alt="Logo" />
-          <span>Integ Detailing</span>
-        </div>
+        <Link href='/' className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
+          <Image src={horizontalLogo} href="/" className="w-48 h-24 mr-2" alt="Logo" />
+        </Link>
         <div className="block lg:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -46,7 +48,7 @@ export default function NavBarMenu() {
             </Link>
           </div>
           <div>
-            <button className="inline-flex items-center bg-amber-500 border-0 py-2 px-4 text-white">
+            <button className="inline-flex items-center bg-amber-500 xxs:mt-4 lg:mt-0 border-0 py-2 px-4 text-white">
                 Client Intake Form
             </button>
           </div>
