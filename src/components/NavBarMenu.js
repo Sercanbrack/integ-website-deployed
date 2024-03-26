@@ -8,10 +8,10 @@ export default function NavBarMenu() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="flex items-center justify-between flex-wrap p-6">
-        <Link href='/' className="flex flex-col items-center flex-shrink-0 mr-6 lg:mr-72">
+        <nav className="flex items-center justify-between flex-wrap p-6 bg-slate-300 border-b-slate-600 border-4">
+        <Link href='/' className="flex flex-col items-center flex-shrink-0 xxs:mr-2 xs:mr-6 lg:mr-72">
           <Image src={horizontalLogo} href="/" className="w-48 h-24 mr-2" alt="Integ Detailing Logo" priority="high"/>
-          <span className="italic">Structural Steel Design Done Right</span>
+          <span className="italic text-xs">Structural Steel Detailing Done Right</span>
         </Link>
         <div className="block lg:hidden">
           <button
