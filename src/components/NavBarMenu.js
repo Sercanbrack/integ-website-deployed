@@ -9,8 +9,9 @@ export default function NavBarMenu() {
 
     return (
         <nav className="flex items-center justify-between flex-wrap p-6">
-        <Link href='/' className="flex items-center flex-shrink-0 text-white mr-6 lg:mr-72">
-          <Image src={horizontalLogo} href="/" className="w-48 h-24 mr-2" alt="Logo" />
+        <Link href='/' className="flex flex-col items-center flex-shrink-0 mr-6 lg:mr-72">
+          <Image src={horizontalLogo} href="/" className="w-48 h-24 mr-2" alt="Integ Detailing Logo" priority="high"/>
+          <span className="italic">Structural Steel Design Done Right</span>
         </Link>
         <div className="block lg:hidden">
           <button
@@ -41,7 +42,7 @@ export default function NavBarMenu() {
               About
             </Link>
             <Link href="previous-work" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
-              Previous Works
+              Previous Work
             </Link>
             <Link href="contact" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
               Contact Information
