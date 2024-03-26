@@ -37,19 +37,19 @@ export default function NavBarMenu() {
         <div
           className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${isOpen ? "block" : "hidden"}`}
         >
-          <div className="text-sm lg:flex-grow">
-            <Link href="about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+          <div className="lg:flex-grow">
+            <Link href="about" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-gray-100">
               About
             </Link>
-            <Link href="previous-work" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+            <Link href="previous-work" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-gray-100">
               Previous Work
             </Link>
-            <Link href="contact" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4">
+            <Link href="contact" className="block mt-4 lg:inline-block lg:mt-0 text-white-200 mr-4 hover:text-gray-100">
               Contact Information
             </Link>
           </div>
           <div>
-            <button className="inline-flex items-center bg-amber-500 xxs:mt-4 lg:mt-0 border-0 py-2 px-4 text-white">
+            <button className="inline-flex items-center bg-amber-500 xxs:mt-4 lg:mt-0 border-0 py-2 px-4 text-white hover:bg-amber-700">
                 Client Intake Form
             </button>
           </div>
