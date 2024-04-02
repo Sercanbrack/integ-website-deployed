@@ -49,9 +49,9 @@ export default function NavBarMenu() {
             </Link>
           </div>
           <div>
-            <button className="inline-flex items-center bg-amber-500 xxs:mt-4 lg:mt-0 border-0 py-2 px-4 text-white hover:bg-amber-700">
+            <Link href="client-intake" className="inline-flex items-center bg-amber-500 xxs:mt-4 lg:mt-0 border-0 py-2 px-4 text-white hover:bg-amber-700">
                 Client Intake Form
-            </button>
+            </Link>
           </div>
         </div>
       </nav>
